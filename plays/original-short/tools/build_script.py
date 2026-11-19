@@ -170,26 +170,61 @@ def main() -> None:
                                  for cid, off, xv, yv in spec["moves"]]
         scenes.append(build_scene(raw))
 
+    # Close-up blocks are time ranges, not per-cue flags: a narrator line or a
+    # pause between cues must not drop the shot back to the wide stage.
     closeups = {
-        "ideal": ("s3-01", "s3-20", ["larisa", "karandyshev"]),
-        "efir": ("s4-01a", "s4-12", ["knurov", "harita"]),
-        "half-million": ("s5-16", "s5-50", ["paratov", "larisa"]),
-        "funny-man": ("s7-09", "s7-15", ["karandyshev"]),
-        "coin-toss": ("s8-02", "s8-16", ["knurov", "vozhevatov"]),
-        "engagement": ("s8-18", "s8-42", ["paratov", "larisa"]),
-        "thing": ("s9-02", "s9-39d", ["larisa", "karandyshev"]),
+        "ideal": [
+            ("s3-01", "s3-09e", ["larisa", "karandyshev"]),
+            ("s3-17", "s3-20", ["larisa", "karandyshev"]),
+        ],
+        "efir": [
+            ("s4-01a", "s4-12", ["knurov", "harita"]),
+        ],
+        "half-million": [
+            ("s5-16", "s5-25", ["paratov", "larisa"]),
+            ("s5-31", "s5-42b", ["paratov", "larisa"]),
+        ],
+        "funny-man": [
+            ("s7-09", "s7-15", ["karandyshev"]),
+        ],
+        "coin-toss": [
+            ("s8-02", "s8-16", ["knurov", "vozhevatov"]),
+        ],
+        "engagement": [
+            ("s8-18", "s8-30", ["paratov", "larisa"]),
+            ("s8-38", "s8-42", ["paratov", "larisa"]),
+        ],
+        "thing": [
+            ("s9-02", "s9-07", ["larisa"]),
+            ("s9-18", "s9-27", ["larisa", "karandyshev"]),
+            ("s9-36", "s9-39d", ["larisa", "karandyshev"]),
+        ],
     }
     for scene in scenes:
-        if scene["id"] not in closeups:
-            continue
-        start, end, cast = closeups[scene["id"]]
+        specs = closeups.get(scene["id"], [])
         ids = [cue["id"] for cue in scene["cues"]]
-        if start not in ids or end not in ids:
-            continue
-        first, last = ids.index(start), ids.index(end)
-        for cue in scene["cues"][first:last + 1]:
-            if cue["speaker"] != "narrator":
-                cue["closeup"] = list(cast)
+        segments = []
+        for start, end, cast in specs:
+            if start not in ids or end not in ids:
+                continue
+            first, last = ids.index(start), ids.index(end)
+            start_at = scene["cues"][first]["at"]
+            if last + 1 < len(scene["cues"]):
+                end_at = scene["cues"][last + 1]["at"]
+            else:
+                end_at = scene["duration"]
+            segments.append({
+                "from": start,
+                "to": end,
+                "start": round(start_at, 2),
+                "end": round(end_at, 2),
+                "cast": list(cast),
+            })
+            for cue in scene["cues"][first:last + 1]:
+                if cue["speaker"] != "narrator":
+                    cue["closeup"] = list(cast)
+        if segments:
+            scene["closeups"] = segments
 
     faces_path = HERE / "faces.json"
     faces = json.loads(faces_path.read_text(encoding="utf-8")) if faces_path.is_file() else {}

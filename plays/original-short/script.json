@@ -1233,11 +1233,7 @@
           ],
           "adaptation": "Реплика сохранена полностью. Одна длинная реплика разделена на две для читаемости.",
           "at": 118.1,
-          "duration": 8.7,
-          "closeup": [
-            "larisa",
-            "karandyshev"
-          ]
+          "duration": 8.7
         },
         {
           "id": "s3-10-b",
@@ -1248,11 +1244,7 @@
           ],
           "adaptation": "Реплика сохранена полностью. Одна длинная реплика разделена на две для читаемости.",
           "at": 127.3,
-          "duration": 7.7,
-          "closeup": [
-            "larisa",
-            "karandyshev"
-          ]
+          "duration": 7.7
         },
         {
           "id": "s3-10c",
@@ -1263,11 +1255,7 @@
           ],
           "adaptation": "Реплика сохранена.",
           "at": 135.6,
-          "duration": 2.5,
-          "closeup": [
-            "larisa",
-            "karandyshev"
-          ]
+          "duration": 2.5
         },
         {
           "id": "s3-11",
@@ -1278,11 +1266,7 @@
           ],
           "adaptation": "Первая часть рассказа о выбитой монете.",
           "at": 138.7,
-          "duration": 8.0,
-          "closeup": [
-            "larisa",
-            "karandyshev"
-          ]
+          "duration": 8.0
         },
         {
           "id": "s3-12",
@@ -1293,11 +1277,7 @@
           ],
           "adaptation": "Вторая часть рассказа; монета не выносится отдельным предметом.",
           "at": 147.3,
-          "duration": 8.7,
-          "closeup": [
-            "larisa",
-            "karandyshev"
-          ]
+          "duration": 8.7
         },
         {
           "id": "s3-12a",
@@ -1308,11 +1288,7 @@
           ],
           "adaptation": "Реплика сохранена.",
           "at": 156.6,
-          "duration": 2.5,
-          "closeup": [
-            "larisa",
-            "karandyshev"
-          ]
+          "duration": 2.5
         },
         {
           "id": "s3-12b",
@@ -1323,11 +1299,7 @@
           ],
           "adaptation": "Реплика сохранена.",
           "at": 159.7,
-          "duration": 2.8,
-          "closeup": [
-            "larisa",
-            "karandyshev"
-          ]
+          "duration": 2.8
         },
         {
           "id": "s3-12c",
@@ -1338,11 +1310,7 @@
           ],
           "adaptation": "Реплика сохранена.",
           "at": 163.1,
-          "duration": 2.9,
-          "closeup": [
-            "larisa",
-            "karandyshev"
-          ]
+          "duration": 2.9
         },
         {
           "id": "s3-12d",
@@ -1353,11 +1321,7 @@
           ],
           "adaptation": "Реплика сохранена.",
           "at": 166.6,
-          "duration": 3.3,
-          "closeup": [
-            "larisa",
-            "karandyshev"
-          ]
+          "duration": 3.3
         },
         {
           "id": "s3-13",
@@ -1368,11 +1332,7 @@
           ],
           "adaptation": "Реплика сохранена.",
           "at": 170.5,
-          "duration": 2.8,
-          "closeup": [
-            "larisa",
-            "karandyshev"
-          ]
+          "duration": 2.8
         },
         {
           "id": "s3-14",
@@ -1383,11 +1343,7 @@
           ],
           "adaptation": "Реплика сохранена.",
           "at": 173.9,
-          "duration": 5.3,
-          "closeup": [
-            "larisa",
-            "karandyshev"
-          ]
+          "duration": 5.3
         },
         {
           "id": "s3-14a",
@@ -1398,11 +1354,7 @@
           ],
           "adaptation": "Реплика сохранена.",
           "at": 179.8,
-          "duration": 6.5,
-          "closeup": [
-            "larisa",
-            "karandyshev"
-          ]
+          "duration": 6.5
         },
         {
           "id": "s3-14b",
@@ -1413,11 +1365,7 @@
           ],
           "adaptation": "Реплика сохранена.",
           "at": 186.9,
-          "duration": 7.0,
-          "closeup": [
-            "larisa",
-            "karandyshev"
-          ]
+          "duration": 7.0
         },
         {
           "id": "s3-15",
@@ -1428,11 +1376,7 @@
           ],
           "adaptation": "Реплика сохранена.",
           "at": 194.5,
-          "duration": 2.5,
-          "closeup": [
-            "larisa",
-            "karandyshev"
-          ]
+          "duration": 2.5
         },
         {
           "id": "s3-16",
@@ -1443,11 +1387,7 @@
           ],
           "adaptation": "Реплика сохранена.",
           "at": 197.6,
-          "duration": 8.7,
-          "closeup": [
-            "larisa",
-            "karandyshev"
-          ]
+          "duration": 8.7
         },
         {
           "id": "s3-17",
@@ -1595,7 +1535,29 @@
           "duration": 2.6
         }
       ],
-      "duration": 253.0
+      "duration": 253.0,
+      "closeups": [
+        {
+          "from": "s3-01",
+          "to": "s3-09e",
+          "start": 3.0,
+          "end": 118.1,
+          "cast": [
+            "larisa",
+            "karandyshev"
+          ]
+        },
+        {
+          "from": "s3-17",
+          "to": "s3-20",
+          "start": 206.9,
+          "end": 237.4,
+          "cast": [
+            "larisa",
+            "karandyshev"
+          ]
+        }
+      ]
     },
     {
       "id": "efir",
@@ -2078,7 +2040,19 @@
           "duration": 4.4
         }
       ],
-      "duration": 129.4
+      "duration": 129.4,
+      "closeups": [
+        {
+          "from": "s4-01a",
+          "to": "s4-12",
+          "start": 7.1,
+          "end": 72.3,
+          "cast": [
+            "knurov",
+            "harita"
+          ]
+        }
+      ]
     },
     {
       "id": "half-million",
@@ -2619,11 +2593,7 @@
           ],
           "adaptation": "Реплика сохранена.",
           "at": 114.6,
-          "duration": 5.5,
-          "closeup": [
-            "paratov",
-            "larisa"
-          ]
+          "duration": 5.5
         },
         {
           "id": "s5-27",
@@ -2634,11 +2604,7 @@
           ],
           "adaptation": "Реплика сохранена.",
           "at": 120.7,
-          "duration": 2.5,
-          "closeup": [
-            "paratov",
-            "larisa"
-          ]
+          "duration": 2.5
         },
         {
           "id": "s5-28",
@@ -2649,11 +2615,7 @@
           ],
           "adaptation": "Реплика сохранена.",
           "at": 123.8,
-          "duration": 3.6,
-          "closeup": [
-            "paratov",
-            "larisa"
-          ]
+          "duration": 3.6
         },
         {
           "id": "s5-29",
@@ -2664,11 +2626,7 @@
           ],
           "adaptation": "Реплика сохранена.",
           "at": 128.0,
-          "duration": 2.5,
-          "closeup": [
-            "paratov",
-            "larisa"
-          ]
+          "duration": 2.5
         },
         {
           "id": "s5-30-a",
@@ -2679,11 +2637,7 @@
           ],
           "adaptation": "Реплика сохранена; начало с многоточием. Одна длинная реплика разделена на две для читаемости.",
           "at": 131.1,
-          "duration": 8.2,
-          "closeup": [
-            "paratov",
-            "larisa"
-          ]
+          "duration": 8.2
         },
         {
           "id": "s5-30-b",
@@ -2694,11 +2648,7 @@
           ],
           "adaptation": "Реплика сохранена; начало с многоточием. Одна длинная реплика разделена на две для читаемости.",
           "at": 139.8,
-          "duration": 4.0,
-          "closeup": [
-            "paratov",
-            "larisa"
-          ]
+          "duration": 4.0
         },
         {
           "id": "s5-30c",
@@ -2709,11 +2659,7 @@
           ],
           "adaptation": "Реплика сохранена.",
           "at": 144.4,
-          "duration": 2.5,
-          "closeup": [
-            "paratov",
-            "larisa"
-          ]
+          "duration": 2.5
         },
         {
           "id": "s5-30d",
@@ -2724,11 +2670,7 @@
           ],
           "adaptation": "Реплика сохранена.",
           "at": 147.5,
-          "duration": 2.9,
-          "closeup": [
-            "paratov",
-            "larisa"
-          ]
+          "duration": 2.9
         },
         {
           "id": "s5-31",
@@ -2994,11 +2936,7 @@
           ],
           "adaptation": "Реплика сохранена.",
           "at": 228.6,
-          "duration": 6.0,
-          "closeup": [
-            "paratov",
-            "larisa"
-          ]
+          "duration": 6.0
         },
         {
           "id": "s5-44",
@@ -3009,11 +2947,7 @@
           ],
           "adaptation": "Реплика сокращена; сохранены правила о браке и вопрос о женихе.",
           "at": 235.2,
-          "duration": 8.7,
-          "closeup": [
-            "paratov",
-            "larisa"
-          ]
+          "duration": 8.7
         },
         {
           "id": "s5-45",
@@ -3024,11 +2958,7 @@
           ],
           "adaptation": "Реплика сохранена.",
           "at": 244.5,
-          "duration": 2.5,
-          "closeup": [
-            "paratov",
-            "larisa"
-          ]
+          "duration": 2.5
         },
         {
           "id": "s5-46",
@@ -3039,11 +2969,7 @@
           ],
           "adaptation": "Реплика сохранена.",
           "at": 247.6,
-          "duration": 2.5,
-          "closeup": [
-            "paratov",
-            "larisa"
-          ]
+          "duration": 2.5
         },
         {
           "id": "s5-47",
@@ -3054,11 +2980,7 @@
           ],
           "adaptation": "Реплика сохранена.",
           "at": 250.7,
-          "duration": 2.5,
-          "closeup": [
-            "paratov",
-            "larisa"
-          ]
+          "duration": 2.5
         },
         {
           "id": "s5-48",
@@ -3069,11 +2991,7 @@
           ],
           "adaptation": "Реплика сохранена.",
           "at": 253.8,
-          "duration": 2.5,
-          "closeup": [
-            "paratov",
-            "larisa"
-          ]
+          "duration": 2.5
         },
         {
           "id": "s5-49",
@@ -3084,11 +3002,7 @@
           ],
           "adaptation": "Реплика сохранена.",
           "at": 256.9,
-          "duration": 2.5,
-          "closeup": [
-            "paratov",
-            "larisa"
-          ]
+          "duration": 2.5
         },
         {
           "id": "s5-50",
@@ -3099,11 +3013,7 @@
           ],
           "adaptation": "Реплика сохранена.",
           "at": 260.0,
-          "duration": 3.9,
-          "closeup": [
-            "paratov",
-            "larisa"
-          ]
+          "duration": 3.9
         },
         {
           "id": "s5-51",
@@ -3403,7 +3313,29 @@
           "duration": 5.7
         }
       ],
-      "duration": 373.5
+      "duration": 373.5,
+      "closeups": [
+        {
+          "from": "s5-16",
+          "to": "s5-25",
+          "start": 63.3,
+          "end": 114.6,
+          "cast": [
+            "paratov",
+            "larisa"
+          ]
+        },
+        {
+          "from": "s5-31",
+          "to": "s5-42b",
+          "start": 151.0,
+          "end": 228.6,
+          "cast": [
+            "paratov",
+            "larisa"
+          ]
+        }
+      ]
     },
     {
       "id": "dinner",
@@ -4711,7 +4643,18 @@
           "duration": 3.1
         }
       ],
-      "duration": 126.2
+      "duration": 126.2,
+      "closeups": [
+        {
+          "from": "s7-09",
+          "to": "s7-15",
+          "start": 57.1,
+          "end": 110.2,
+          "cast": [
+            "karandyshev"
+          ]
+        }
+      ]
     },
     {
       "id": "coin-toss",
@@ -5015,7 +4958,19 @@
           ]
         }
       ],
-      "duration": 72.7
+      "duration": 72.7,
+      "closeups": [
+        {
+          "from": "s8-02",
+          "to": "s8-16",
+          "start": 7.0,
+          "end": 72.7,
+          "cast": [
+            "knurov",
+            "vozhevatov"
+          ]
+        }
+      ]
     },
     {
       "id": "engagement",
@@ -5437,11 +5392,7 @@
           ],
           "adaptation": "Реплика сохранена.",
           "at": 86.4,
-          "duration": 2.9,
-          "closeup": [
-            "paratov",
-            "larisa"
-          ]
+          "duration": 2.9
         },
         {
           "id": "s8-32",
@@ -5452,11 +5403,7 @@
           ],
           "adaptation": "Реплика сохранена.",
           "at": 89.9,
-          "duration": 9.3,
-          "closeup": [
-            "paratov",
-            "larisa"
-          ]
+          "duration": 9.3
         },
         {
           "id": "s8-33",
@@ -5467,11 +5414,7 @@
           ],
           "adaptation": "Реплика сохранена.",
           "at": 99.8,
-          "duration": 3.0,
-          "closeup": [
-            "paratov",
-            "larisa"
-          ]
+          "duration": 3.0
         },
         {
           "id": "s8-34-a",
@@ -5482,11 +5425,7 @@
           ],
           "adaptation": "Реплика сохранена. Одна длинная реплика разделена на две для читаемости.",
           "at": 103.4,
-          "duration": 4.5,
-          "closeup": [
-            "paratov",
-            "larisa"
-          ]
+          "duration": 4.5
         },
         {
           "id": "s8-34-b",
@@ -5497,11 +5436,7 @@
           ],
           "adaptation": "Реплика сохранена. Одна длинная реплика разделена на две для читаемости.",
           "at": 108.4,
-          "duration": 6.8,
-          "closeup": [
-            "paratov",
-            "larisa"
-          ]
+          "duration": 6.8
         },
         {
           "id": "s8-35",
@@ -5512,11 +5447,7 @@
           ],
           "adaptation": "Реплика сохранена.",
           "at": 115.8,
-          "duration": 2.6,
-          "closeup": [
-            "paratov",
-            "larisa"
-          ]
+          "duration": 2.6
         },
         {
           "id": "s8-36",
@@ -5527,11 +5458,7 @@
           ],
           "adaptation": "Реплика сохранена.",
           "at": 119.0,
-          "duration": 2.5,
-          "closeup": [
-            "paratov",
-            "larisa"
-          ]
+          "duration": 2.5
         },
         {
           "id": "s8-37",
@@ -5542,11 +5469,7 @@
           ],
           "adaptation": "Реплика сохранена.",
           "at": 122.1,
-          "duration": 6.2,
-          "closeup": [
-            "paratov",
-            "larisa"
-          ]
+          "duration": 6.2
         },
         {
           "id": "s8-38",
@@ -5830,7 +5753,29 @@
           "duration": 4.8
         }
       ],
-      "duration": 231.2
+      "duration": 231.2,
+      "closeups": [
+        {
+          "from": "s8-18",
+          "to": "s8-30",
+          "start": 3.0,
+          "end": 86.4,
+          "cast": [
+            "paratov",
+            "larisa"
+          ]
+        },
+        {
+          "from": "s8-38",
+          "to": "s8-42",
+          "start": 128.9,
+          "end": 157.2,
+          "cast": [
+            "paratov",
+            "larisa"
+          ]
+        }
+      ]
     },
     {
       "id": "thing",
@@ -6097,8 +6042,7 @@
           "at": 6.4,
           "duration": 6.2,
           "closeup": [
-            "larisa",
-            "karandyshev"
+            "larisa"
           ]
         },
         {
@@ -6112,8 +6056,7 @@
           "at": 13.2,
           "duration": 8.1,
           "closeup": [
-            "larisa",
-            "karandyshev"
+            "larisa"
           ]
         },
         {
@@ -6127,8 +6070,7 @@
           "at": 21.9,
           "duration": 7.8,
           "closeup": [
-            "larisa",
-            "karandyshev"
+            "larisa"
           ]
         },
         {
@@ -6142,8 +6084,7 @@
           "at": 30.3,
           "duration": 6.8,
           "closeup": [
-            "larisa",
-            "karandyshev"
+            "larisa"
           ]
         },
         {
@@ -6157,8 +6098,7 @@
           "at": 37.6,
           "duration": 6.5,
           "closeup": [
-            "larisa",
-            "karandyshev"
+            "larisa"
           ]
         },
         {
@@ -6172,8 +6112,7 @@
           "at": 44.7,
           "duration": 9.5,
           "closeup": [
-            "larisa",
-            "karandyshev"
+            "larisa"
           ]
         },
         {
@@ -6187,8 +6126,7 @@
           "at": 54.8,
           "duration": 4.8,
           "closeup": [
-            "larisa",
-            "karandyshev"
+            "larisa"
           ]
         },
         {
@@ -6211,11 +6149,7 @@
           ],
           "adaptation": "Реплика сохранена.",
           "at": 63.3,
-          "duration": 4.5,
-          "closeup": [
-            "larisa",
-            "karandyshev"
-          ]
+          "duration": 4.5
         },
         {
           "id": "s9-10",
@@ -6226,11 +6160,7 @@
           ],
           "adaptation": "Реплика сохранена.",
           "at": 68.4,
-          "duration": 4.9,
-          "closeup": [
-            "larisa",
-            "karandyshev"
-          ]
+          "duration": 4.9
         },
         {
           "id": "s9-11",
@@ -6241,11 +6171,7 @@
           ],
           "adaptation": "Реплика сохранена.",
           "at": 73.9,
-          "duration": 3.5,
-          "closeup": [
-            "larisa",
-            "karandyshev"
-          ]
+          "duration": 3.5
         },
         {
           "id": "s9-12",
@@ -6256,11 +6182,7 @@
           ],
           "adaptation": "Реплика сохранена.",
           "at": 78.0,
-          "duration": 2.5,
-          "closeup": [
-            "larisa",
-            "karandyshev"
-          ]
+          "duration": 2.5
         },
         {
           "id": "s9-13",
@@ -6271,11 +6193,7 @@
           ],
           "adaptation": "Реплика сохранена.",
           "at": 81.1,
-          "duration": 3.1,
-          "closeup": [
-            "larisa",
-            "karandyshev"
-          ]
+          "duration": 3.1
         },
         {
           "id": "s9-14",
@@ -6286,11 +6204,7 @@
           ],
           "adaptation": "Реплика сохранена.",
           "at": 84.8,
-          "duration": 5.9,
-          "closeup": [
-            "larisa",
-            "karandyshev"
-          ]
+          "duration": 5.9
         },
         {
           "id": "s9-15",
@@ -6301,11 +6215,7 @@
           ],
           "adaptation": "Реплика сохранена.",
           "at": 91.3,
-          "duration": 5.7,
-          "closeup": [
-            "larisa",
-            "karandyshev"
-          ]
+          "duration": 5.7
         },
         {
           "id": "s9-16",
@@ -6316,11 +6226,7 @@
           ],
           "adaptation": "Первая часть реплики; ключевое сравнение с вещью.",
           "at": 97.6,
-          "duration": 9.4,
-          "closeup": [
-            "larisa",
-            "karandyshev"
-          ]
+          "duration": 9.4
         },
         {
           "id": "s9-17",
@@ -6331,11 +6237,7 @@
           ],
           "adaptation": "Вторая часть реплики.",
           "at": 107.6,
-          "duration": 5.6,
-          "closeup": [
-            "larisa",
-            "karandyshev"
-          ]
+          "duration": 5.6
         },
         {
           "id": "s9-18",
@@ -6496,11 +6398,7 @@
           ],
           "adaptation": "Реплика сохранена.",
           "at": 161.2,
-          "duration": 6.0,
-          "closeup": [
-            "larisa",
-            "karandyshev"
-          ]
+          "duration": 6.0
         },
         {
           "id": "s9-29",
@@ -6511,11 +6409,7 @@
           ],
           "adaptation": "Реплика сохранена.",
           "at": 167.8,
-          "duration": 3.8,
-          "closeup": [
-            "larisa",
-            "karandyshev"
-          ]
+          "duration": 3.8
         },
         {
           "id": "s9-30",
@@ -6526,11 +6420,7 @@
           ],
           "adaptation": "Реплика сохранена.",
           "at": 172.2,
-          "duration": 6.5,
-          "closeup": [
-            "larisa",
-            "karandyshev"
-          ]
+          "duration": 6.5
         },
         {
           "id": "s9-30a",
@@ -6541,11 +6431,7 @@
           ],
           "adaptation": "Реплика сохранена.",
           "at": 179.3,
-          "duration": 2.9,
-          "closeup": [
-            "larisa",
-            "karandyshev"
-          ]
+          "duration": 2.9
         },
         {
           "id": "s9-31",
@@ -6556,11 +6442,7 @@
           ],
           "adaptation": "Реплика сохранена.",
           "at": 182.8,
-          "duration": 4.5,
-          "closeup": [
-            "larisa",
-            "karandyshev"
-          ]
+          "duration": 4.5
         },
         {
           "id": "s9-32",
@@ -6571,11 +6453,7 @@
           ],
           "adaptation": "Реплика сохранена.",
           "at": 187.9,
-          "duration": 3.9,
-          "closeup": [
-            "larisa",
-            "karandyshev"
-          ]
+          "duration": 3.9
         },
         {
           "id": "s9-33",
@@ -6586,11 +6464,7 @@
           ],
           "adaptation": "Реплика сохранена.",
           "at": 192.4,
-          "duration": 3.5,
-          "closeup": [
-            "larisa",
-            "karandyshev"
-          ]
+          "duration": 3.5
         },
         {
           "id": "s9-34",
@@ -6601,11 +6475,7 @@
           ],
           "adaptation": "Реплика сохранена.",
           "at": 196.5,
-          "duration": 3.9,
-          "closeup": [
-            "larisa",
-            "karandyshev"
-          ]
+          "duration": 3.9
         },
         {
           "id": "s9-35-a",
@@ -6616,11 +6486,7 @@
           ],
           "adaptation": "Первая часть монолога; ключевая тема любви. Одна длинная реплика разделена на две для читаемости.",
           "at": 201.0,
-          "duration": 4.4,
-          "closeup": [
-            "larisa",
-            "karandyshev"
-          ]
+          "duration": 4.4
         },
         {
           "id": "s9-35-b",
@@ -6631,11 +6497,7 @@
           ],
           "adaptation": "Первая часть монолога; ключевая тема любви. Одна длинная реплика разделена на две для читаемости.",
           "at": 205.9,
-          "duration": 6.9,
-          "closeup": [
-            "larisa",
-            "karandyshev"
-          ]
+          "duration": 6.9
         },
         {
           "id": "s9-36",
@@ -6860,7 +6722,38 @@
           "duration": 2.5
         }
       ],
-      "duration": 289.1
+      "duration": 289.1,
+      "closeups": [
+        {
+          "from": "s9-02",
+          "to": "s9-07",
+          "start": 6.4,
+          "end": 60.2,
+          "cast": [
+            "larisa"
+          ]
+        },
+        {
+          "from": "s9-18",
+          "to": "s9-27",
+          "start": 113.8,
+          "end": 161.2,
+          "cast": [
+            "larisa",
+            "karandyshev"
+          ]
+        },
+        {
+          "from": "s9-36",
+          "to": "s9-39d",
+          "start": 213.4,
+          "end": 240.3,
+          "cast": [
+            "larisa",
+            "karandyshev"
+          ]
+        }
+      ]
     }
   ]
 }

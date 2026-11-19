@@ -164,8 +164,26 @@
                    y: state.y * HEIGHT + (parent?.y || 0), angle: 0 });
     }
     items.sort((a, b) => a.item.z - b.item.z);
+    let closeup = null;
+    const segment = (scene.closeups || []).find(s => local >= s.start && local < s.end);
+    if (segment) {
+      const cast = segment.cast.filter(slug => {
+        const actor = actors.get(slug);
+        return actor && actor.state.visible;
+      });
+      if (cast.length) {
+        let speaker = cue && cast.includes(cue.speaker) ? cue.speaker : null;
+        if (!speaker) {
+          for (let i = scene.cues.length - 1; i >= 0; i--) {
+            const previous = scene.cues[i];
+            if (previous.at <= local && cast.includes(previous.speaker)) { speaker = previous.speaker; break; }
+          }
+        }
+        closeup = { ...segment, cast, speaker: speaker || cast[0] };
+      }
+    }
     const curtain = Math.min(smooth(local / curtain_seconds), smooth((scene.duration - local) / curtain_seconds));
-    return { index, scene, local, cue, actors, items, curtain };
+    return { index, scene, local, cue, actors, items, curtain, closeup };
   }
   return { Playback, validateStory, itemState, gestureOffset, stageState, smooth, clamp, formatTime, WIDTH, HEIGHT, CPS };
 });

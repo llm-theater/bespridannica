@@ -76,9 +76,10 @@
       ctx.restore();
       return { x: cx, y: cy - size * .3 };
     }
-    drawCloseup(frame, heads) {
-      const cast = frame.cue?.closeup;
-      if (!cast?.length || frame.curtain < .9 || frame.ended) return null;
+    drawCloseup(frame) {
+      const block = frame.closeup;
+      if (!block?.cast?.length || frame.curtain < .9 || frame.ended) return null;
+      const cast = block.cast;
       const W = this.width, H = this.height, ctx = this.ctx;
       // Paper wash: the room stays readable but recedes behind the faces.
       ctx.save();
@@ -89,7 +90,7 @@
       const gap = size * .16;
       const total = cast.length * size + (cast.length - 1) * gap;
       let left = (W - total) / 2;
-      const speaker = frame.cue.speaker;
+      const speaker = block.speaker;
       const anchors = new Map();
       cast.forEach((slug, index) => {
         const actor = frame.actors.get(slug);
@@ -112,14 +113,14 @@
       const sw = W / scale, sh = H / scale;
       ctx.drawImage(bg, (bg.naturalWidth - sw) / 2, bg.naturalHeight - sh, sw, sh, 0, 0, W, H);
       const heads = new Map();
-      const closeupMode = Boolean(frame.cue?.closeup?.length && frame.curtain >= .9 && !frame.ended);
+      const closeupMode = Boolean(frame.closeup && frame.curtain >= .9 && !frame.ended);
       if (!closeupMode) {
         for (const item of frame.items) {
           const head = this.drawCutout(item);
           if (head && frame.actors.has(item.item.id)) heads.set(item.item.id, head);
         }
       }
-      const closeup = this.drawCloseup(frame, heads);
+      const closeup = this.drawCloseup(frame);
       if (closeup) for (const [slug, anchor] of closeup) heads.set(slug, anchor);
       const travel = W / 2 * frame.curtain;
       ctx.drawImage(this.curtain, -travel, 0, W / 2, H);
